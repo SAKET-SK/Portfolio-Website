@@ -12,7 +12,7 @@ mobileMenu.addEventListener('click', () => {
 
 
 })
-if (document.title === "I²IT ACM")
+if (document.title === "Saket Khopkar Portfolio")
     window.addEventListener('scroll', () => {
         navBar.classList.toggle("sticky", window.scrollY > 700)
 
