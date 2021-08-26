@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;900&display=swap');
+
+
+/* Root settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    --primary :#42d8d0;
+    --highlight:#FBEEC1;
+    --secondary:white;
+    --background:  black;
+    --para:rgb(22,22,22);
+}
+html{
+}
+body{
+    font-family:'Mulish', sans-serif;
+}
+
+.container{
+    
+}
+.buttons{
+    background-color: transparent;
+    color:  var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 15px;
+    transition: .4s ease;
+}
+.buttons:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+    color:var(--secondary);
+    transform: translate(5px,-5px);
+    box-shadow: -5px 5px 0 0 rgb(147, 194, 255);
+}
+.black{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.452);
+}
+.black:hover{
+    color: rgb(22,22,22);
+    background-color: var(--secondary);
+    transform: translate(5px,-5px);
+    box-shadow: -5px 5px 0 0 rgba(255, 255, 255, 0.288);
+}
+
+
+
+/* Mobile / Tablets */
+@media screen and (max-width:770px){
+    .container{
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+    .buttons{
+        
+        padding: 8px 16px;
+        margin: 8px 0;
+        font-size: 12px;
+        
+    }
+}

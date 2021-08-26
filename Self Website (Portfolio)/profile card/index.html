@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6816dd194.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main center">
+        <div class="box center">
+            <img src="PHOTO.png" alt="">
+            <div>
+                <p class="user_name">Saket Khopkar</p>
+                <p class="skill">Front-end developer, Game Developer, Content Writer, Tech Enthusiast</p>
+                <p class="skill">To get in touch ----------></p>
+            </div>
+            <div class="arr_container center ">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="left_container off">
+                <p>Skills</p>
+                <div class="skills">
+                    <div>Html</div>
+                    <div>Css</div>
+                    <div>Js</div>
+                    <div>React</div>
+                    <div>MySQl</div>
+                    <div>Java</div>
+                    <div>Unity</div>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/SAKET-SK"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saket-khopkar-336684198/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/saketkhopkar478?s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mystic.saket_910/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="cancel center">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clc = document.querySelector(".cancel");
+        const arr = document.querySelector(".arr_container");
+        const left_container = document.querySelector(".left_container");
+
+        arr.addEventListener("click", ()=>{
+            arr.classList.add("active_arr");
+            if(left_container.classList.contains("off")){
+                left_container.classList.remove("off");
+                left_container.classList.add("active");
+            }
+        });
+        clc.addEventListener("click", ()=>{
+            arr.classList.remove("active_arr");
+            if(left_container.classList.contains("active")){
+                left_container.classList.remove("active");
+                left_container.classList.add("off");
+            }
+        });
+    </script>
+</body>
+</html>
